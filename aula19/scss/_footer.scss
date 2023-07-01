@@ -1,0 +1,45 @@
+.footer{
+    width: 100%;
+    background-color: var(--bg-primary);
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .container-footer{
+        max-width: 1100px;
+        margin: 0 auto;        
+        display: flex;
+        column-gap: 75px;
+
+        p{
+            color: var(--color-text);
+            font-size: 14px;
+
+            a{
+                color: $color-brand-light;
+
+                &:hover{
+                    color: $color-brand-dark;
+                }
+            }
+        }
+
+        button{
+            @include button();
+            width: 175px;
+        }
+    }
+}
+
+
+@media (max-width:600px){
+    .container-footer{
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    } 
+
+}

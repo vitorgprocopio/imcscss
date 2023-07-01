@@ -1,0 +1,27 @@
+//Declaração de variáveis
+
+//$bg-body: #222222;
+//$bg-input: $bg-body;
+//$bg-primary: #000000;
+//$color-text: #FFFFFF;
+$color-brand-light: #3EDCFF;
+$color-brand-dark: #00A9CE;
+$fs-title: 36px;
+$fs-title-mob: 24px;
+
+:root{
+    --bg-body: #222222;
+    --bg-input: var(--bg-body);
+    --bg-primary: #000000;
+    --color-text: #ffffff;
+}
+
+.light{
+    --bg-body: #dddddd;    
+    --bg-input: var(--bg-body);
+    --bg-primary: #ffffff;
+    --color-text: #000000;
+
+    
+
+}

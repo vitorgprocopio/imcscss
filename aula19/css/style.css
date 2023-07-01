@@ -1,0 +1,212 @@
+:root {
+  --bg-body: #222222;
+  --bg-input: var(--bg-body);
+  --bg-primary: #000000;
+  --color-text: #ffffff;
+}
+
+.light {
+  --bg-body: #dddddd;
+  --bg-input: var(--bg-body);
+  --bg-primary: #ffffff;
+  --color-text: #000000;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-body);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+#theme-select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #3EDCFF, #00A9CE);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+#theme-select:hover {
+  background-image: linear-gradient(to left, #3EDCFF, #00A9CE);
+}
+#theme-select:active {
+  transform: scale(0.98);
+}
+#theme-select option {
+  font-weight: bold;
+}
+
+.theme {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.theme:hover ul {
+  display: block;
+}
+.theme button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: var(--color-text);
+  cursor: pointer;
+  width: 150px;
+  border-radius: 5px;
+  text-align: left;
+}
+.theme button:hover {
+  background-color: #333333;
+}
+.theme button i {
+  margin-right: 5px;
+}
+.theme > button {
+  border: solid 1px transparent;
+  border-bottom: 1px solid #00A9CE;
+}
+.theme > button:focus {
+  border: solid 1px #666;
+}
+.theme ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.container {
+  width: 550px;
+  height: 416px;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 75px;
+  box-sizing: border-box;
+}
+.container #content-result {
+  display: none;
+}
+.container .content {
+  width: 100%;
+  text-align: center;
+}
+.container .content button {
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #3EDCFF, #00A9CE);
+  width: 100%;
+}
+.container .content button:hover {
+  background-image: linear-gradient(to left, #3EDCFF, #00A9CE);
+}
+.container .content button:active {
+  transform: scale(0.98);
+}
+.container .content h1, .container .content h2 {
+  color: var(--color-text);
+  font-size: 36px;
+}
+@media (max-width: 600px) {
+  .container .content h1, .container .content h2 {
+    font-size: 24px;
+  }
+}
+.container .content p {
+  color: var(--color-text);
+}
+.container .content p.info {
+  margin: 30px 0;
+}
+.container .content form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.container .content form input {
+  height: 50px;
+  background-color: var(--bg-input);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: var(--color-text);
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 40px;
+  }
+  .container h1 {
+    font-size: 28px !important;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--bg-primary);
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.footer .container-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+}
+.footer .container-footer p {
+  color: var(--color-text);
+  font-size: 14px;
+}
+.footer .container-footer p a {
+  color: #3EDCFF;
+}
+.footer .container-footer p a:hover {
+  color: #00A9CE;
+}
+.footer .container-footer button {
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #3EDCFF, #00A9CE);
+  width: 175px;
+}
+.footer .container-footer button:hover {
+  background-image: linear-gradient(to left, #3EDCFF, #00A9CE);
+}
+.footer .container-footer button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
