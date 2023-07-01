@@ -1,0 +1,72 @@
+#theme-select{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include button();
+    border-radius: 5px;
+    padding: 0 20px;
+
+    option{
+        //background-color: $color-brand-dark;
+        font-weight: bold;
+    }
+
+}
+
+
+
+.theme{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    &:hover{
+        ul{
+            display: block;
+        }
+    }
+
+    //todos os botões
+    button{
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        color: var(--color-text);
+        cursor: pointer;        
+        width: 150px;       
+        border-radius: 5px;
+        text-align: left;
+
+        &:hover{
+            background-color: #333333;
+        }
+
+        i{
+            margin-right: 5px;
+        }
+    }
+
+    //primeiro botão
+    > button{
+        border: solid 1px transparent;
+        border-bottom: 1px solid #00A9CE;
+    }
+
+    //quando o foco estiver no primeiro botão
+    > button:focus{
+        border: solid 1px #666;
+    }
+
+    //quando o foco estiever no primeiro botão, vou manipular a ul que for a "irmã" do botão
+    //> button:focus + ul{
+      //  display: block;        
+    //}
+
+    ul{
+        margin: 5px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: none;        
+    }
+}

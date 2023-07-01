@@ -1,0 +1,25 @@
+//Mixin "Função"
+@mixin title(){
+    color: var(--color-text);
+    font-size: $fs-title;
+
+@media (max-width:600px){
+    font-size: $fs-title-mob;
+}
+}
+
+@mixin button(){
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to right,$color-brand-light,$color-brand-dark);
+
+    &:hover{
+        background-image: linear-gradient(to left,$color-brand-light,$color-brand-dark);
+    }
+
+    &:active{
+        transform: scale(0.98);
+    }
+}
